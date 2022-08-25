@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>ЛР 2 Коняева А-12-19 Вар 13 (Перепись ЛР2) </title>
+        <meta charset="UTF-8">
+		<style>
+		td {text-align: center;}
+		</style>
+    </head>
+    <body>
+	
+	 <center>
+        <form action="http://LocalHost/result.php" method="post">
+            <font size="4" >
+                <b>
+                   Оформление замены/возврата товара
+                </b>
+            </font>
+            <br>
+            <br>
+            <table border="1" cellspacing="0"  >
+		        <tr> <td colspan="4" > 
+				   <b> Тип операции: </b>
+				   <input type="radio" name="type" value="Замена" checked="checked" /> замена
+                   <input type="radio" name="type" value="Возврат" /> возврат
+                    </td> 
+			    </tr>
+                <tr>
+				  <td > Адрес магазина сети: </td>
+				  <td><br>
+                            <select size=1 name = "adress">
+                                <option>1-я Синичкина 3/1а
+                                <option>1-я Синичкина 3/1
+                                <option>Энергетическая 8
+                            </select>  </td>
+				    <td colspan="2" rowspan="2" > Опишите подробности ситуации: <br>
+					<textarea name = "About"></textarea></td>
+                </tr>
+				<tr> 
+				 <td > Наименование товара:	</td>
+				 <td> <input type="text" size="39" name = "NameTovar"><br></td>
+				</tr>
+				
+				<tr > <td colspan="2" > 
+				  Доставка: <br> 
+				   <input type="radio" name="dost" value="Лично" checked="checked" /> Лично
+                   <input type="radio" name="dost" value="Курьером" /> Курьером
+                </td> 
+				<td colspan="2" > 
+				   Тип Товара:  
+				  <select size=1 name = "tovar">
+				                <option>одежда
+                                <option>Кофта
+                                <option>Сумка
+                                <option>Ножик
+                            </select>
+					<br><br> Количество: 
+					<input type="text" size="39" name = "colvo" value = "0">
+					
+                </td> 
+			    </tr>
+				<tr > <td colspan="2"> 
+				  Дата покупки, указанная в чеке 
+				   <input type="date" id="date" name="date" /> 
+                   
+                </td> 
+				   <td > 
+				     <input type=checkbox name = "a">производственный брак			
+                   </td> 
+				   <td > 
+				  	 <input type=checkbox name = "b">отсутсвие комплектующих	
+                   </td>
+			    </tr>
+				<tr >
+				    <td colspan="2" > 
+				    Контактная информация <br>
+				    Имя: <input type="text"size="39" name = "name"><br><br>
+                    Emale: <input type="text"size="39" name = "email" value = "example@mail.ru"><br>
+                    </td> 
+				    <td > 
+				     <input type=checkbox name = "c">поврежденная/вскрытая упаковка	
+                    </td> 
+				    <td > 
+				  	 <input type=checkbox name = "d">товар не соответсвует описанию	
+                    </td>
+			    </tr>
+				<tr >
+				    <td colspan="2" > 
+				   
+				    <input type="submit" value="Оставить заявку">
+                    </td> 
+				    <td > 
+				     <input type=checkbox name = "e">другое
+                    </td> 
+				    <td > 
+				  	 <input type=text name = "f">
+                    </td>
+			    </tr>
+                
+            </table>
+        </form>
+		 </center>
+    </body>
+</html>
